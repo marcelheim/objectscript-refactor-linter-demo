@@ -1,0 +1,14 @@
+ROUTINE demo.ping.Ping [Type=INT]
+ ;
+Ping()
+	New now
+	Set now=$Horolog
+	Set ^Ping("last")=now
+	Set ^Ping("count")=$Get(^Ping("count"))+1
+	Quit "pong"
+
+Health()
+	New ok
+	Set ok=$Data(^Ping("last"))
+	Quit:'ok "error:never pinged"
+	Quit "ok"

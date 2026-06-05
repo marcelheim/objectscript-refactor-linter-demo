@@ -1,0 +1,40 @@
+{
+  "error_on": "error",
+  "syntax-errors": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "nesting-depth": {
+    "enabled": true,
+    "severity": "warn",
+    "max_depth": 4
+  },
+  "goto-usage": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "postconditional-usage": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "global-access": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "if-inline-command": {
+    "enabled": true,
+    "severity": "info"
+  },
+  "xecute-usage": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "kill-all": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "for-inline-command": {
+    "enabled": true,
+    "severity": "info"
+  }
+}
