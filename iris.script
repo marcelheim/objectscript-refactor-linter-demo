@@ -7,6 +7,8 @@
 
     zn "IRISAPP"
 
-    do $SYSTEM.OBJ.Load("/home/irisowner/dev/src/demo/ping/Ping.mac", "ck")
+    do $SYSTEM.OBJ.Load("/home/irisowner/dev/src/life/LifeModern.mac", "ck")
+    do $SYSTEM.OBJ.Load("/home/irisowner/dev/src/life/LifeClassic.mac", "ck")
+    do $SYSTEM.OBJ.Load("/home/irisowner/dev/src/web/LifeWeb.cls", "ck")
 
     halt

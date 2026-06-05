@@ -4,26 +4,9 @@
     "enabled": true,
     "severity": "error"
   },
-  "nesting-depth": {
-    "enabled": true,
-    "severity": "warn",
-    "max_depth": 4
-  },
   "goto-usage": {
     "enabled": true,
     "severity": "warn"
-  },
-  "postconditional-usage": {
-    "enabled": true,
-    "severity": "warn"
-  },
-  "global-access": {
-    "enabled": true,
-    "severity": "warn"
-  },
-  "if-inline-command": {
-    "enabled": true,
-    "severity": "info"
   },
   "xecute-usage": {
     "enabled": true,
@@ -33,8 +16,24 @@
     "enabled": true,
     "severity": "warn"
   },
+  "postconditional-usage": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "if-inline-command": {
+    "enabled": true,
+    "severity": "info"
+  },
   "for-inline-command": {
     "enabled": true,
     "severity": "info"
+  },
+  "global-access": {
+    "enabled": false,
+    "severity": "warn"
+  },
+  "nesting-depth": {
+    "enabled": false,
+    "severity": "warn"
   }
 }
