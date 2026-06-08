@@ -12,5 +12,6 @@
             "service": "iris",
             "internalPort": 52773
         }
-    }
+    },
+    "sarif-viewer.connectToGithubCodeScanning": "on"
 }
