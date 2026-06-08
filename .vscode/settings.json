@@ -3,6 +3,9 @@
         "Dockerfile*": "dockerfile",
         "iris.script": "objectscript"
     },
+    "[objectscript]": {
+        "files.eol": "\n"
+    },
     "objectscript.conn": {
         "active": true,
         "ns": "IRISAPP",
