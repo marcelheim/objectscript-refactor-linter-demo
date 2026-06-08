@@ -9,11 +9,11 @@
     "severity": "warn"
   },
   "postconditional-usage": {
-    "enabled": true,
+    "enabled": false,
     "severity": "info"
   },
   "global-access": {
-    "enabled": true,
+    "enabled": false,
     "severity": "info"
   }
 }
