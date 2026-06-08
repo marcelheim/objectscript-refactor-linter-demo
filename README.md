@@ -1,18 +1,15 @@
 # objectscript-refactor-linter-demo
 
-A small InterSystems IRIS app that runs Conway's Game of Life (the two-colour
-"immigration" variant) twice — once with a **modern**, structured ObjectScript
-engine and once with a **legacy** one. Both produce the exact same generations;
-the web UI runs them side by side and flags any divergence.
+A small InterSystems IRIS web app — a playable Space Invaders with a persistent
+high-score board — used to try out `oto-lint`, an ObjectScript linter.
 
-The point is the gap in *how* they're written. `oto-lint` runs over the `.mac`
-routines in CI on every push and PR and uploads SARIF, so findings show up under
-Security → Code scanning and inline on the diff.
+The score logic lives in `.mac` routines under `src/`; the game and UI are a CSP
+page. `oto-lint` runs over the routines in CI on every push and PR and uploads
+SARIF, so findings show up under Security → Code scanning and inline on the diff.
 
 ```
-src/life/LifeModern.mac    structured engine   (clean)
-src/life/LifeClassic.mac   legacy engine       (goto / xecute / kill / postconditionals)
-src/web/LifeWeb.cls         amber-terminal UI + JSON endpoints
+src/score/Board.mac      high-score storage + ranking
+src/web/ArcadeWeb.cls     Space Invaders (canvas) + leaderboard + JSON endpoints
 ```
 
 Lint locally:

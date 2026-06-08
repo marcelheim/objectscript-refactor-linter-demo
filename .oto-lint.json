@@ -4,28 +4,28 @@
     "enabled": true,
     "severity": "error"
   },
-  "goto-usage": {
-    "enabled": true,
-    "severity": "warn"
-  },
   "xecute-usage": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "error"
   },
   "kill-all": {
     "enabled": true,
     "severity": "warn"
   },
-  "postconditional-usage": {
+  "goto-usage": {
     "enabled": true,
     "severity": "warn"
   },
+  "postconditional-usage": {
+    "enabled": false,
+    "severity": "warn"
+  },
   "if-inline-command": {
-    "enabled": true,
+    "enabled": false,
     "severity": "info"
   },
   "for-inline-command": {
-    "enabled": true,
+    "enabled": false,
     "severity": "info"
   },
   "global-access": {

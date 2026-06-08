@@ -7,8 +7,11 @@
 
     zn "IRISAPP"
 
-    do $SYSTEM.OBJ.Load("/home/irisowner/dev/src/life/LifeModern.mac", "ck")
-    do $SYSTEM.OBJ.Load("/home/irisowner/dev/src/life/LifeClassic.mac", "ck")
-    do $SYSTEM.OBJ.Load("/home/irisowner/dev/src/web/LifeWeb.cls", "ck")
+    do $SYSTEM.OBJ.Load("/home/irisowner/dev/src/score/Board.mac", "ck")
+    do $SYSTEM.OBJ.Load("/home/irisowner/dev/src/web/ArcadeWeb.cls", "ck")
+
+    set r = $$Submit^arcade.score.Board("INVADERS^ACE^4220")
+    set r = $$Submit^arcade.score.Board("INVADERS^ZAP^3110")
+    set r = $$Submit^arcade.score.Board("INVADERS^NEO^1980")
 
     halt
