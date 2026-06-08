@@ -10,10 +10,10 @@
   },
   "postconditional-usage": {
     "enabled": false,
-    "severity": "warn"
+    "severity": "info"
   },
   "global-access": {
     "enabled": false,
-    "severity": "warn"
+    "severity": "info"
   }
 }
