@@ -1,9 +1,5 @@
 {
   "error_on": "error",
-  "syntax-errors": {
-    "enabled": true,
-    "severity": "error"
-  },
   "xecute-usage": {
     "enabled": true,
     "severity": "error"
@@ -12,27 +8,11 @@
     "enabled": true,
     "severity": "warn"
   },
-  "goto-usage": {
-    "enabled": true,
-    "severity": "warn"
-  },
   "postconditional-usage": {
     "enabled": false,
     "severity": "warn"
   },
-  "if-inline-command": {
-    "enabled": false,
-    "severity": "info"
-  },
-  "for-inline-command": {
-    "enabled": false,
-    "severity": "info"
-  },
   "global-access": {
-    "enabled": false,
-    "severity": "warn"
-  },
-  "nesting-depth": {
     "enabled": false,
     "severity": "warn"
   }
